@@ -1,9 +1,9 @@
 function test () {
-    let element = document.getElementsByTagName('section')[1]
+    const element = document.getElementsByTagName('section')[1]
 
     element.remove()
 }
 
-setTimeout(function () {
+setInterval(function () {
     test()
 }, 2000)
