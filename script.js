@@ -6,4 +6,4 @@ function test () {
 
 setInterval(function () {
     test()
-}, 2000)
+}, 500)
