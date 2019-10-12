@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Twitter Feed Auto-Refresh",
-  "description": "This extension will refresh the users timeline automatically",
+  "name": "Twitter Clean Up",
+  "description": "This extension removes several elements of the Twitter webpage",
   "version": "1.0",
   "content_scripts": [
     {

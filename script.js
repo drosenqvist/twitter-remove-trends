@@ -1,9 +1,13 @@
-function test () {
-    const element = document.getElementsByTagName('section')[1]
+function removeElements () {
+    const trends   = document.getElementsByTagName('section')[1],
+          tweetBar = document.querySelectorAll('.r-yfoy6g'),
+          spacer   = document.querySelectorAll('.r-aaos50')
 
-    element.remove()
+    trends.remove()
+    tweetBar[3].remove()
+    spacer[0].remove()
 }
 
 setInterval(function () {
-    test()
+    removeElements()
 }, 500)
