@@ -1,13 +1,15 @@
 function removeElements () {
-    const trends   = document.getElementsByTagName('section')[1],
-          tweetBar = document.querySelectorAll('.r-yfoy6g'),
-          spacer   = document.querySelectorAll('.r-aaos50')
+  const trends   = document.getElementsByTagName('section')[1],
+  tweetBar = document.querySelectorAll('.r-184en5c')[1],
+  spacer   = document.querySelectorAll('.r-aaos50')[0]
 
-    trends.remove()
-    tweetBar[3].remove()
-    spacer[0].remove()
+    
+  trends.remove()
+  tweetBar.remove()
+  spacer.remove()
 }
 
+
 setInterval(function () {
-    removeElements()
+  removeElements()
 }, 500)
