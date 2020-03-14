@@ -1,17 +1,13 @@
-function removeElements () {
-  const trends   = document.getElementsByTagName('section')[1],
-        tweetBar = document.querySelectorAll('.r-184en5c')[1],
-        spacer   = document.querySelectorAll('.r-aaos50')[0]
-
-  // Error handling
-  if (trends === undefined) {
-    return false;
-  }
+removeElements = () => {
+  const trends = document.querySelector('[aria-label="Timeline: Trending now"]'),
+        tweetsBar = document.querySelector('[role="progressbar"]').parentElement,
+        spacer = document.querySelector('.r-1or9b2r')
 
   trends.remove()
-  tweetBar.remove()
+  tweetsBar.remove()
   spacer.remove()
 }
 
-
-setInterval(removeElements, 1000)
+window.addEventListener('load', () => {
+  setTimeout(removeElements, 4000)
+})
